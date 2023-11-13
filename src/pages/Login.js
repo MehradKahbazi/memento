@@ -2,7 +2,7 @@ import LoginForm from "../components/Login/LoginForm";
 
 const Login = () => {
     return ( 
-        <div className="col-dm-4">
+        <div className="row login-bg" dir="rtl">
             <LoginForm />
         </div>
      );

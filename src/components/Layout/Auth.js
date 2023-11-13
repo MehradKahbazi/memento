@@ -2,10 +2,8 @@ import { Outlet } from "react-router-dom";
 
 const Auth = () => {
     return ( 
-        <div className="container">
-            <div className="row justify-content-center align-items-center vh-100">
+        <div className="container-fluid">
                 <Outlet />
-            </div>
         </div>
      );
 }
