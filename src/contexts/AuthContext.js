@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const AuthContext = createContext(null);
 
@@ -34,7 +35,6 @@ export const AuthProvider = ({ children }) => {
         data: {
           email: e.target.email.value,
           password: e.target.password.value,
-          temp_password: e.target.temp_password.value,
         },
       })
         .then((res) => {

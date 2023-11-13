@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import Logo from '../../images/Logo 1.png'
+import Logo from '../../assets/images/Logo 1.png'
 import AuthContext from "../../contexts/AuthContext";
 
 const LoginForm = () => {
@@ -73,9 +72,9 @@ const LoginForm = () => {
                 type="password"
                 autoComplete="off"
                 dir="ltr"
-
+                name="password"
                 className="form-control bg-transparent"
-              />
+              ></input>
               {/* {formik.touched.password && formik.errors.password && (
           <div className='fv-plugins-message-container'>
             <div className='fv-help-block'>
