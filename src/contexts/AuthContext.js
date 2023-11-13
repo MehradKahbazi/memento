@@ -5,10 +5,10 @@ const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
 
-  const [loading, setLoading] = React.useState(false);
-  const [accessToken, setAccessToken] = React.useState('');
-  const [userInfo, setUserInfo] = React.useState(null);
-  const [responseMsg, setResponseMsg] = React.useState('');
+  const [loading, setLoading] = useState(false);
+  const [accessToken, setAccessToken] = useState('');
+  const [userInfo, setUserInfo] = useState(null);
+  const [responseMsg, setResponseMsg] = useState('');
 
   const navigate = useNavigate();
 
