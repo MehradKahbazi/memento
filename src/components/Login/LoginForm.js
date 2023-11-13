@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../images/Logo 1.png'
+import AuthContext from "../../contexts/AuthContext";
 
 const LoginForm = () => {
   const [loading, setLoading] = useState(false);
+  const {loginUser} = useContext(AuthContext);
 
   return (
     <div className="col-md-6 vh-100 d-flex align-items-center justify-content-center">
       <div className="card w-50 bacground-opacity">
         <div className="card-body">
-          <form className="form w-100"  id="kt_login_signin_form">
+          <form className="form w-100"  id="kt_login_signin_form" onSubmit={loginUser}>
             {/* begin::Heading */}
             <div className="text-center">
               <img src={Logo} />
