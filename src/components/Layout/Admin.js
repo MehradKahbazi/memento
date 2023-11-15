@@ -14,14 +14,14 @@ const Admin = () => {
         </div>
         <div className="col-md-9">
           <a
-            class="btn btn-primary btn-customized open-menu"
+            className="btn btn-primary btn-customized open-menu"
             href="#"
             role="button"
             onClick={() => {
               setCollapse((prevState) => !prevState);
             }}
           >
-            <i class="fal fa-align-right"></i> <span>Menu</span>
+            <i className="fal fa-align-right"></i> <span>Menu</span>
           </a>
         </div>
       </div>
