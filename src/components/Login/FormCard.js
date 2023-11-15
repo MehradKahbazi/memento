@@ -6,8 +6,8 @@ import AuthContext from "../../contexts/AuthContext";
 const FormCard = () => {
   const { loginUser } = useContext(AuthContext);
   return (
-    <div className="row justify-content-center p-0">
-      <div className="col-md-10 p-0">
+    <div className="row justify-content-center align-items-center p-0">
+      <div className="col-md-10 p-0 mb-5">
         <div className="card border-0">
           <div className="row justify-content-center">
             <div className="col-md-6 p-0">
