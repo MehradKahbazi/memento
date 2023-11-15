@@ -42,7 +42,6 @@ export const AuthProvider = ({ children }) => {
         .then((res) => {
           const { data } = res;
           localStorage.setItem('access-token', data.payload.token);
-          localStorage.setItem('user-info', JSON.stringify(data.payload.user));
           setAccessToken(data.payload.token);
           setUserInfo(data.payload.user);
           navigate('/admin/dashboard');
