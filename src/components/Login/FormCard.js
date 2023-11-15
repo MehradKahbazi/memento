@@ -32,12 +32,12 @@ const FormCard = () => {
               />
             </div>
             <div className="row justify-content-end">
-              <Link to={"/home"} className="mt-4 forgot-password">
+              <Link to={"/home"} className="mt-4 forgot-password mb-4">
                 فراموشی رمز عبور
               </Link>
             </div>
             <div className="row justify-content-center">
-              <button type="submit" className="submit-button">
+              <button type="submit" className="submit-button border-0">
                 ورود
               </button>
             </div>
