@@ -23,43 +23,43 @@ const Sidebar = () => {
             <ul className="navbar-nav flex-column vw-100">
   
               <li className="nav-item mb-2 ">
-                <Link className="nav-link text-end hover" href="#">
+                <Link className="nav-link text-end rounded-3 hover" href="#">
                 <i className="fal fa-home"></i> خانه  
                 </Link>
               </li>
           
               <li className="nav-item mb-2">
-                <Link className="nav-link text-end hover" href="#">
+                <Link className="nav-link text-end hover rounded-3" href="#">
                 کیف پول  <i className="bi bi-wallet mx-2"></i> 
                 </Link>
               </li>
 
               <li className="nav-item mb-2">
-                <Link className="nav-link text-end hover" href="#">
+                <Link className="nav-link text-end hover rounded-3" href="#">
                 مستر کارت  <i className="bi bi-credit-card mx-2"></i> 
                 </Link>
               </li>
 
               <li className="nav-item mb-2">
-                <Link className="nav-link text-end hover " href="#">
+                <Link className="nav-link text-end hover rounded-3" href="#">
                 انتقال وجه بانکی  <i className="bi bi-arrow-left-right mx-2"></i> 
                 </Link>
               </li>
 
               <li className="nav-item mb-2">
-                <Link className="nav-link text-end hover" href="#">
+                <Link className="nav-link text-end hover rounded-3" href="#">
                 برداشت وجه  <i className="bi bi-box-arrow-down mx-2"></i> 
                 </Link>
               </li>
 
               <li className="nav-item mb-2">
-                <Link className="nav-link text-end hover" href="#">
+                <Link className="nav-link text-end hover rounded-3" href="#">
                 تراکنش ها <i className="bi bi-list-check mx-2"></i> 
                 </Link>
               </li>
 
               <li className="nav-item mb-2">
-                <Link className="nav-link text-end hover" href="#">
+                <Link className="nav-link text-end hover rounded-3" href="#">
                 پروفایل  <i className="bi bi-person mx-2"></i> 
                 </Link>
               </li>
@@ -67,7 +67,7 @@ const Sidebar = () => {
               <hr className="ms-3"/>
 
               <li className="nav-item mb-2">
-                <a className="nav-link bold text-danger text-end hover" href="#" onClick={logoutUser}>
+                <a className="nav-link bold text-danger text-end" href="#" onClick={logoutUser}>
                 خروج از حساب  <i className="bi bi-box-arrow-left mx-2"></i> 
                 </a>
               </li>

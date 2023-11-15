@@ -193,12 +193,9 @@ a[aria-expanded="true"] {
     border-left: 0.0625rem rgba(145, 158, 171, 0.24) dashed;
 }
 
-.hover{
-    color: black;
-}
-
 .hover:hover{
-    color: #D10B11;
+    color: #EEE !important;
+    background-color: #704e2eb9;
 }
 
 /* Form styles */
