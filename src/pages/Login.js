@@ -1,5 +1,5 @@
 import FormCard from "../components/Login/FormCard";
-import Background from "../assets/images/Admin-Left.png"
+import Background from "../assets/images/LoginImage.jpg"
 
 const Login = () => {
   return (
