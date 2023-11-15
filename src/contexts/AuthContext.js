@@ -10,7 +10,6 @@ export const AuthProvider = ({ children }) => {
   const [accessToken, setAccessToken] = useState('');
   const [userInfo, setUserInfo] = useState(null);
   const [responseMsg, setResponseMsg] = useState('');
-  const [collapse, setCollapse] = useState(true);
 
 
   const navigate = useNavigate();
@@ -88,8 +87,6 @@ export const AuthProvider = ({ children }) => {
         accessToken,
         setAccessToken,
         loading,
-        collapse,
-        setCollapse
       }}
     >
       {children}
