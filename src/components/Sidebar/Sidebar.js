@@ -2,8 +2,12 @@ import styles from "../../assets/styles/main.css";
 import Logo from "../../assets/images/dashboard-dashboard-sidebar-vertical-logo-full-1.png";
 import Avatar from "../../assets/images/dashboard-dashboard-sidebar-vertical-img.png"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import AuthContext from "../../contexts/AuthContext";
 
 const Sidebar = () => {
+
+  const { logoutUser } = useContext(AuthContext);
   return (
 
       <div className="">
@@ -63,9 +67,9 @@ const Sidebar = () => {
               <hr className="ms-3"/>
 
               <li className="nav-item mb-2">
-                <Link className="nav-link bold text-danger text-end hover" href="#">
+                <a className="nav-link bold text-danger text-end hover" href="#" onClick={logoutUser}>
                 خروج از حساب  <i className="bi bi-box-arrow-left mx-2"></i> 
-                </Link>
+                </a>
               </li>
 
             </ul>
