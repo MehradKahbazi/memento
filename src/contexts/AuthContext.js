@@ -56,25 +56,27 @@ export const AuthProvider = ({ children }) => {
   };
   // define logout method
   const logoutUser = () => {
-    axios({
-      baseURL:
-        process.env.NODE_ENV === 'development'
-          ? process.env.REACT_APP_DEV_MODE
-          : process.env.REACT_APP_PRO_MODE,
-      url: '/api/logout',
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem('access-token')}`,
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        Accept: 'application/json',
-      },
-    }).then(() => {
-      setAccessToken('');
-      setUserInfo(null);
-      localStorage.clear();
-      navigate('/auth/login-page');
-    });
+    // axios({
+    //   baseURL:
+    //     process.env.NODE_ENV === 'development'
+    //       ? process.env.REACT_APP_DEV_MODE
+    //       : process.env.REACT_APP_PRO_MODE,
+    //   url: '/api/logout',
+    //   method: 'POST',
+    //   headers: {
+    //     Authorization: `Bearer ${localStorage.getItem('access-token')}`,
+    //     'Content-Type': 'application/json',
+    //     'Access-Control-Allow-Origin': '*',
+    //     Accept: 'application/json',
+    //   },
+    // }).then(() => {
+    //   setAccessToken('');
+    //   setUserInfo(null);
+    //   localStorage.clear();
+    //   navigate('/auth/login-page');
+    // });
+    localStorage.clear()
+    navigate('/auth/login')
   };
   return (
     <AuthContext.Provider
