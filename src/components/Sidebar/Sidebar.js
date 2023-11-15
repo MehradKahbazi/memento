@@ -24,7 +24,7 @@ const Sidebar = () => {
   
               <li className="nav-item mb-2 ">
                 <Link className="nav-link text-end hover" href="#">
-                خانه <i className="bi bi-house-door mx-2"></i> 
+                <i className="fal fa-home"></i> خانه  
                 </Link>
               </li>
           
