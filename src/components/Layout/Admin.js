@@ -12,7 +12,7 @@ const Admin = () => {
           <Sidebar/>
         </div>
         <div className="col-md-9">
-         
+         <Outlet />
         </div>
       </div>
     </div>

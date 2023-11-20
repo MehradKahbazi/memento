@@ -11,7 +11,10 @@ const useAxios = () => {
   const accessToken = localStorage.getItem('user-token');
 
   const axiosInstance = axios.create({
-    baseURL: 'https://138.201.167.230:5050',
+    baseURL: process.env.NODE_ENV === 'development'
+    ? process.env.REACT_APP_DEV_MODE
+    : process.env.REACT_APP_PRO_MODE,
+
     headers: {
       Authorization: `Bearer ${accessToken}`,
       Accept: 'application/json',
