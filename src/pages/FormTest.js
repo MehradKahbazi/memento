@@ -1,39 +1,89 @@
 const FormTest = () => {
-    return ( 
-        <>
-        {/* <form>
-        <div className="container">
-            <div className="row justify-content-center vh-100 align-items-center rtl">
-                <div className="col-md-6 ">
-                    <div className="card p-5 rounded-4">
-                    <div class="form-floating mb-3">
-                        <input type="email" className="form-control mb-3 text-input" id="floatingInput" placeholder=""/>
-                        <label htmlFor="floatingInput" className="label-rtl">Email address</label>
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-floating">
-                        <input type="password" className="form-control mb-3 text-input" id="floatingPassword" placeholder="Password"/>
-                        <label htmlFor="floatingPassword" className="label-rtl">Password</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" className="form-check-input mb-5 " id="exampleCheck1"/>
-                            <label className="form-check-label label-rtl" htmlFor="exampleCheck1">Check me out</label>
-                        </div>
-                          <button type="submit" className="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </form> */}
-
+  return (
+    <>
       <form className="login-bo">
         <div className="rtl me-5 user-box">
-            <input className="form-control text-input mt-5" id="text-input" placeholder=""/>
-            <label htmlFor="text-input" className="form-label label px-3">نام کاربری</label>
+          <input
+            className="form-control text-input mt-5"
+            id="text-input"
+            placeholder=""
+          />
+          <label htmlFor="text-input" className="form-label label px-3">
+            نام کاربری
+          </label>
         </div>
       </form>
-      </>
-     );
-}
- 
+
+      <div className="container table-container pt-4 px-5">
+        <div className="row mb-4 rtl">
+            
+                <div className="col-md-10">
+                    <h4 className="px-3">جزئیات پرسنل</h4>
+                </div>
+                <div className="col-md-2 justify-content-end d-flex">
+                    <button className="btn btn-add ms-3">+  افزودن</button>
+                </div>
+            
+        </div>
+        <div className="row p-0">
+          <div className="col-md-12 px-0">
+            <table className="table table-borderless table-style rtl rounded-2">
+              <thead className="table-head rounded-2">
+                <tr className="table-head">
+                  <td>ردیف</td>
+                  <td>نام و نام خانوادگی</td>
+                  <td>نقش</td>
+                  <td>ایمیل</td>
+                  <td>وضعیت</td>
+                  <td>عملیات</td>
+                </tr>
+              </thead>
+              <tbody className="table-body">
+                <tr>
+                  <td>1</td>
+                  <td>محسن منظمی</td>
+                  <td>کاربر</td>
+                  <td>mohsen.monazami.mm@gmail.com</td>
+                  <td className="table-status-success">فعال</td>
+                  <td>ویرایش</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>مهراد کهبازی</td>
+                  <td>کاربر</td>
+                  <td>mohsen.monazami.mm@gmail.com</td>
+                  <td className="table-status-danger">غیر فعال</td>
+                  <td>ویرایش</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>فراز ناطقی</td>
+                  <td>کاربر</td>
+                  <td>mohsen.monazami.mm@gmail.com</td>
+                  <td className="table-status-success">فعال</td>
+                  <td>ویرایش</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>علیرضا مردانی</td>
+                  <td>کاربر</td>
+                  <td>mohsen.monazami.mm@gmail.com</td>
+                  <td className="table-status-success">فعال</td>
+                  <td>ویرایش</td>
+                </tr>
+              </tbody>
+              <tfoot className="table-foot">
+                <tr>
+                    <td colSpan={5} className="text-start">نتیجه :</td>
+                    <td colSpan={5}>نامعلوم</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
 export default FormTest;
