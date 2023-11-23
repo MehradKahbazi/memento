@@ -250,7 +250,7 @@ a[aria-expanded="true"] {
     line-height: 1.625rem; 
 }
 
-/* form input style */
+/* Form Input Style */
 
 .text-input{
     width: 29.625rem !important; 
@@ -285,7 +285,8 @@ a[aria-expanded="true"] {
 .text-input:not(:placeholder-shown)~label{
     transform: translateY(-30px);
     color: #919EAB;
-    font-size: 1rem;
+    font-size: .9rem;
 } 
 
 
+/* Table Style */
