@@ -10,6 +10,11 @@ body{
     font-family: IranSans !important;
 }
 
+.rtl{
+    text-align: right;
+    direction: rtl;
+}
+
 /* .login-bg{
     background-image: url('../images/image2.jpg');
 }
@@ -245,6 +250,8 @@ a[aria-expanded="true"] {
     line-height: 1.625rem; 
 }
 
+/* form input style */
+
 .text-input{
     width: 29.625rem !important; 
     padding: 1rem !important;
@@ -254,16 +261,31 @@ a[aria-expanded="true"] {
     direction: rtl;
 }
 
-.text-input::placeholder{
-    color: var(--11-text-color-light-03-text-disabled, #919EAB);
-    text-align: start;
-    font-family: IRANSans;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; 
+.text-input:focus{
+    border-color: none !important;
+    box-shadow: none !important;
 }
 
-.text-input:focus{
-    border: none;
+
+
+.label{
+    background-color: white;
+    color: #919EAB;
+    font-size: 1.2rem;
+    direction: rtl;
+    position: relative;
+    top: -44px;
+    right: 1rem;
+    transition: all 0.3s ease-out;
+    
+}
+
+.text-input:focus~label ,
+.text-input:active~label,
+.text-input:not(:placeholder-shown)~label{
+    transform: translateY(-30px);
+    color: #919EAB;
+    font-size: 1rem;
 } 
+
+
