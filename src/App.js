@@ -3,6 +3,7 @@ import Admin from './components/Layout/Admin';
 import Auth from './components/Layout/Auth';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import FormTest from './pages/FormTest';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/auth' element={<Auth />}>
           <Route path='/auth/login' element={<Login />} />
         </Route>
+        <Route path='/test' element={<FormTest/>}/>
       </Routes>
   );
 }

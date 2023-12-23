@@ -10,6 +10,11 @@ body{
     font-family: IranSans !important;
 }
 
+.rtl{
+    text-align: right;
+    direction: rtl;
+}
+
 /* .login-bg{
     background-image: url('../images/image2.jpg');
 }
@@ -245,6 +250,8 @@ a[aria-expanded="true"] {
     line-height: 1.625rem; 
 }
 
+/* Form Input Style */
+
 .text-input{
     width: 29.625rem !important; 
     padding: 1rem !important;
@@ -254,16 +261,92 @@ a[aria-expanded="true"] {
     direction: rtl;
 }
 
-.text-input::placeholder{
-    color: var(--11-text-color-light-03-text-disabled, #919EAB);
-    text-align: start;
-    font-family: IRANSans;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; 
+.text-input:focus{
+    border-color: none !important;
+    box-shadow: none !important;
 }
 
-.text-input:focus{
-    border: none;
+
+
+.label{
+    background-color: white;
+    color: #919EAB;
+    font-size: 1.2rem;
+    direction: rtl;
+    position: relative;
+    top: -44px;
+    right: 1rem;
+    transition: all 0.3s ease-out;
+    
+}
+
+.text-input:focus~label ,
+.text-input:active~label,
+.text-input:not(:placeholder-shown)~label{
+    transform: translateY(-30px);
+    color: #919EAB;
+    font-size: .9rem;
 } 
+
+
+/* Table Style */
+
+.table-container{
+    border-radius: 16px;
+    background: var(--12-background-light-02-paper, #FFF);
+    box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(145, 158, 171, 0.20);
+}
+
+.table-style{
+    text-align: center;
+    line-height: 60px !important;
+}
+
+
+.table-head{
+    border-radius: 20px;
+    background-color: #F4F6F8;
+}
+
+.table-head > td{
+    background-color: transparent !important;
+}
+
+.table-status-success{
+    border-radius: 6px;
+    padding: 2px;
+    color: #229A16 !important;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.table-status-danger{
+    border-radius: 6px;
+    padding: 2px;    
+    color: #B72136 !important;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.table-foot{
+    border-top: #919EAB solid 1px !important;
+}
+
+.btn-add{
+    color: #FFF !important;
+    display: flex;
+    padding: 6px 16px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #00AB55 !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 171, 85, 0.24);
+    transition: all ease-in .3s;
+}
+
+.btn-add:hover{
+    background-color: #009a4d !important;
+}
