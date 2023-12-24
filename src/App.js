@@ -11,11 +11,12 @@ function App() {
         <Route exact path='/' element={<Navigate to='/auth/login' />} />
         <Route path='/admin' element={<Admin />}>
           <Route path='/admin/dashboard' element={<Dashboard />} />
+        <Route path='/admin/table' element={<FormTest/>}/>
+
         </Route>
         <Route path='/auth' element={<Auth />}>
           <Route path='/auth/login' element={<Login />} />
         </Route>
-        <Route path='/test' element={<FormTest/>}/>
       </Routes>
   );
 }

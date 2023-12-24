@@ -1,13 +1,15 @@
 @font-face {
     font-family: IranSans;
     font-style: normal;
-    src: url(../webfonts/IranSans.eot),
+    src: 
+    local(IranSans),
+    url(../webfonts/IranSans.eot),
     url(../webfonts/IranSans.ttf) format(".truetype"),
     url(../webfonts/IranSans.woff) format(".woff");
 }
 
 body{
-    font-family: IranSans !important;
+    /* font-family: IranSans !important; */
 }
 
 .rtl{

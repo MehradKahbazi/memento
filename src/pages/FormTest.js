@@ -1,7 +1,7 @@
 const FormTest = () => {
   return (
     <>
-      <form className="login-bo">
+      {/* <form className="login-bo">
         <div className="rtl me-5 user-box">
           <input
             className="form-control text-input mt-5"
@@ -12,9 +12,9 @@ const FormTest = () => {
             نام کاربری
           </label>
         </div>
-      </form>
+      </form> */}
 
-      <div className="container table-container pt-4 px-5">
+      <div className="container table-container pt-4 px-5 mt-5 border shadow-sm">
         <div className="row mb-4 rtl">
             
                 <div className="col-md-10">
@@ -27,7 +27,7 @@ const FormTest = () => {
         </div>
         <div className="row p-0">
           <div className="col-md-12 px-0">
-            <table className="table table-borderless table-style rtl rounded-2">
+            <table className="table table-borderless table-striped table-style rtl rounded-2">
               <thead className="table-head rounded-2">
                 <tr className="table-head">
                   <td>ردیف</td>
